@@ -1,7 +1,4 @@
 /*jshint esversion:6*/
-
-
-
 stack = (n) => {
     obj = {
         size: n,

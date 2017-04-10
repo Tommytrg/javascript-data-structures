@@ -1,6 +1,6 @@
 /*jshint esversion:6*/
 const expect = require('chai').expect;
-const stack = require('../index');
+const stack = require('../stack');
 
 describe('Stack', () => {
   it('should return size 1', () => {
@@ -43,12 +43,4 @@ describe('Stack', () => {
     let result = stck.isFull();
     expect(result).to.equal(true);
   });
-
-  // it('should push(1) return [1]', () => {
-  //   let stck = stack(3);
-  //   let result = stck.push(1);
-  //   expect(result).to.equal([1]);
-  // });
-
-
 });
