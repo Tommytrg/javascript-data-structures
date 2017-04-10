@@ -1,8 +1,8 @@
 {
-  "name": "stack-ds-js",
+  "name": "javascript-data-structures",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "stack.js",
   "scripts": {
     "test": "mocha --reporter spec"
   },
