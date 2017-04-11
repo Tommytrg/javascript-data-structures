@@ -1,6 +1,6 @@
 /*jshint esversion:6*/
-stack = (n) => {
-  obj = {
+let stack = (n) => {
+  let obj = {
       size: n,
       elements: [],
       push: (item) => {

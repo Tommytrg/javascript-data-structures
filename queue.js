@@ -1,14 +1,15 @@
 /*jshint esversion:6*/
 
-queue = (n) => {
-  obj = {
+let queue = (n) => {
+  let obj = {
     size: n,
     elements: [],
-    enqueue : item=>{
-      if(obj.elements !== obj.size){
+    enqueue: item => {
+      if (obj.elements !== obj.size){
         obj.elements.reverse();
         obj.elements.push(item);
         obj.elements.reverse();
+        return obj.elements;
       }else{
         return 'Queue Overgflow';
       }

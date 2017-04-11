@@ -3,6 +3,11 @@ const expect = require('chai').expect;
 const stack = require('../stack');
 
 describe('Stack', () => {
+  it('should return size 0', () => {
+    let result = stack(0);
+    expect(result.size).to.equal(0);
+  });
+
   it('should return size 1', () => {
     let result = stack(1);
     expect(result.size).to.equal(1);

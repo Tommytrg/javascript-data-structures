@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Tommytrg/stack-ds-js#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "eslint-config-rallycoding": "^3.2.0",
     "mocha": "^3.2.0"
   }
 }
