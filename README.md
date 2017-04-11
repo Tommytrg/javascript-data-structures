@@ -1,1 +1,1 @@
-# stack-ds-js
+# javascript-data-structures
