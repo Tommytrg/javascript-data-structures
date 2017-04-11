@@ -5,13 +5,13 @@ let queue = (n) => {
     size: n,
     elements: [],
     enqueue: item => {
-      if (obj.elements !== obj.size){
+      if (obj.elements.length !== obj.size){
         obj.elements.reverse();
         obj.elements.push(item);
         obj.elements.reverse();
         return obj.elements;
       }else{
-        return 'Queue Overgflow';
+        return 'Queue Overflow';
       }
     },
     dequeue: () => {
@@ -22,7 +22,11 @@ let queue = (n) => {
       }
     },
     peek: () => {
-      return obj.elements[obj.elements.length - 1];
+      if(obj.elements.length === 0){
+        return 'Queue Underflow';
+      }else{
+        return obj.elements[obj.elements.length - 1];
+      }
     },
     isFull: () => {
       return obj.elements.length === obj.size;
