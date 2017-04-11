@@ -17,19 +17,19 @@ describe('Queue', () => {
     let queue1 = queue(2);
     expect(queue1.size).to.equal(2);
   });
-//fail
+
   it('should return queue when enqueue', () => {
     let queue1 = queue(2);
 
-    expect(queue1.enqueue(2)).to.equal([2]);
+    expect(queue1.enqueue(2)).to.deep.equal([2]);
   });
 //fail
   it('should return queue when enqueue', () => {
-    let queue1 = queue(2);
+    let queue1 = queue(3);
     queue1.enqueue(1);
     queue1.enqueue(2);
     let result = queue1.enqueue(3);
-    expect(result).to.equal([3,2,1]);
+    expect(result).to.deep.equal([3,2,1]);
   });
 
   it('should return Queue Overflow when is full', () => {
